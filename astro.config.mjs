@@ -3,8 +3,8 @@ import mdx from "@astrojs/mdx";
 import sitemap from "@astrojs/sitemap";
 
 export default defineConfig({
-  site: "https://cuantovale.github.io/carpaa/",
-  base: "/carpaa/",
+  site: "https://cuantovale.github.io/",
+  base: "/",
   integrations: [mdx(), sitemap()],
   markdown: {
     shikiConfig: {
