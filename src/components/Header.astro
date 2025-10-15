@@ -1,8 +1,9 @@
 ---
 import { SITE_TITLE } from '../consts';
+import noisy from '../icons/noisy.webp';
 ---
 
-<header>
+<header style={`--noisy: url(${noisy})`}>
 	<nav class='header__nav'>
 		<h2 class='logo'><span class="icon-logo"/><a href='/'>{SITE_TITLE}</a></h2>
 	</nav>
@@ -16,7 +17,7 @@ import { SITE_TITLE } from '../consts';
 		padding: 0em 1em;
 		border-bottom: 1px solid var(--secondary-variation);
 		display: flex;
-		background-image: url('../icons/noisy.webp');
+		background-image: var(--noisy);
 		backdrop-filter: blur(10px);
 		z-index: 3;
 	}
